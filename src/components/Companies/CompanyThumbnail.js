@@ -2,7 +2,7 @@ import React from "react";
 import { useModal } from "../Modal/useModal";
 import styles from "./styles.module.scss";
 
-export const Sponsor = ({ name }) => {
+export const CompanyThumbnail = ({ name }) => {
   const { dispatch } = useModal();
   return (
     <li>

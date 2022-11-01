@@ -1,9 +1,9 @@
 import React from "react";
 import common from "../../styles/common.module.scss";
 import clsx from "clsx";
-import { SponsorsList } from "./SponsorsList";
+import { CompanyList } from "./CompanyList";
 import styles from "./styles.module.scss";
-export const AttendingCompanies = () => {
+export const AllCompanies = () => {
   const companies = [
     { name: "a" },
     { name: "b" },
@@ -29,7 +29,7 @@ export const AttendingCompanies = () => {
           </p>
         </div>
 
-        <SponsorsList companies={companies} />
+        <CompanyList companies={companies} />
       </div>
     </div>
   );
