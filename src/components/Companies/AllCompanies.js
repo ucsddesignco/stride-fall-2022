@@ -3,15 +3,9 @@ import common from "../../styles/common.module.scss";
 import clsx from "clsx";
 import { CompanyList } from "./CompanyList";
 import styles from "./styles.module.scss";
+import { CompanyData } from "./companyData";
 export const AllCompanies = () => {
-  const companies = [
-    { name: "a" },
-    { name: "b" },
-    { name: "c" },
-    { name: "d" },
-    { name: "e" },
-    { name: "f" },
-  ];
+  const companies = CompanyData;
 
   return (
     <div className={clsx(common.section)}>

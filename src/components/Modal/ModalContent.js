@@ -43,17 +43,18 @@ export const ModalContent = ({}) => {
           >
             <span className={styles.infoPill}>One-to-One</span>
             <span className={styles.infoPill}>Info Session</span>
+            <span className={styles.infoPill}>Recruitment at Stride</span>
           </div>
           <div className={styles.subtitle}>
             <h4>Links</h4>
             <div className={common.divider} />
           </div>
-          <div className={styles.paragraphWrapper}>
+          <div className={clsx(styles.paragraphWrapper, styles.linkWrapper)}>
             <a href="/">Link</a>
             <a href="/">Link</a>
           </div>
           <div className={styles.subtitle}>
-            <h4>Open Roles</h4>
+            <h4>Roles</h4>
             <div className={common.divider} />
           </div>
           <div className={styles.paragraphWrapper}>

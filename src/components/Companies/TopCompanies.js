@@ -4,13 +4,10 @@ import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
 import { CompanyList } from "./CompanyList";
 import arrow from "../../images/arrow.svg";
+import { CompanyData } from "./companyData";
 
 export const TopCompanies = () => {
-  const companies = [
-    { name: "Company A" },
-    { name: "Company B" },
-    { name: "Company C" },
-  ];
+  const companies = CompanyData;
 
   return (
     <div className={common.section}>

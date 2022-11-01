@@ -43,6 +43,7 @@
 .infoPillWrapper {
   display: flex;
   gap: calc(tokens.$size-space-s / 2);
+  flex-wrap: wrap;
 }
 
 .wrapper {
@@ -254,6 +255,12 @@
     margin-bottom: tokens.$size-space-l;
   }
   width: 100%;
+}
+
+.linkWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: tokens.$size-space-m;
 }
 
 .subtitle {

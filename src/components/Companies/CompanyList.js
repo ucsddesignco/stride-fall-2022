@@ -12,7 +12,7 @@ export const CompanyList = ({ companies }) => {
       </div>
       <ul className={styles.sponsorsList}>
         {companies.map((company) => (
-          <CompanyThumbnail name={company.name} />
+          <CompanyThumbnail company={company} />
         ))}
       </ul>
       <div className={clsx(styles.decoration, styles.right)}>

@@ -2,16 +2,16 @@ import React from "react";
 import { useModal } from "../Modal/useModal";
 import styles from "./styles.module.scss";
 
-export const CompanyThumbnail = ({ name }) => {
+export const CompanyThumbnail = ({ company }) => {
   const { dispatch } = useModal();
   return (
     <li>
       <button
-        aria-label={name}
+        aria-label={company.name}
         onClick={() => {
           dispatch({
             type: "setCompany",
-            name: name,
+            name: company,
           });
           dispatch({
             type: "show",
@@ -19,7 +19,7 @@ export const CompanyThumbnail = ({ name }) => {
         }}
         className={styles.sponsor}
       >
-        {name}
+        {company.name}
       </button>
     </li>
   );
