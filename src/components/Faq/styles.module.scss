@@ -1,0 +1,86 @@
+@use "../../styles/tokens/tokens";
+@use "@gambowoa/text-box-trim/dist/core" as text-box;
+
+.faqList {
+  ul > li:not(:first-child) {
+    margin-top: -1px;
+  }
+  margin-top: tokens.$size-space-xl;
+  position: relative;
+  display: block;
+
+  @media screen and (max-width: 960px) {
+    margin-top: tokens.$size-space-l;
+  }
+}
+
+.title {
+  position: relative;
+  p {
+    padding-right: tokens.$size-space-xl;
+  }
+  @media screen and (max-width: 960px) {
+    p {
+      padding-right: tokens.$size-space-l;
+    }
+  }
+}
+
+.arrowWrapper {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  @media screen and (max-width: 960px) {
+    width: tokens.$size-space-m;
+  }
+}
+
+.item {
+  background: none;
+  color: tokens.$color-base-black;
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: solid 1px tokens.$color-base-black;
+  cursor: pointer;
+  border-radius: tokens.$size-space-l;
+  padding: tokens.$size-space-l;
+  margin: 0;
+
+  @media screen and (max-width: 960px) {
+    padding: tokens.$size-space-l tokens.$size-space-m;
+  }
+}
+
+.content {
+  p {
+    margin-top: tokens.$size-space-l;
+    font-family: tokens.$font-family-default;
+    display: inline-block;
+    @media screen and (max-width: 960px) {
+      margin-top: tokens.$size-space-m;
+    }
+  }
+}
+
+.decoration {
+  position: absolute;
+  width: tokens.$size-length-xl;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.left {
+  transform: translateX(calc(-100% - tokens.$size-space-l));
+}
+
+.right {
+  right: 0;
+  top: 0;
+  transform: translateX(calc(100% + tokens.$size-space-l));
+}

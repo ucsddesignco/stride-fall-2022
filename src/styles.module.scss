@@ -1,0 +1,28 @@
+@use "@gambowoa/text-box-trim/dist/core" as text-box;
+@use "./styles/base.scss";
+@use "./styles/tokens/_tokens.scss";
+.hello {
+  h1 {
+    font-family: tokens.$font-family-display;
+    @include text-box.trim-px(
+      $height: 700,
+      $ascent: 1000,
+      $descent: -200,
+      $upm: 1000,
+      $font-size: 32,
+      $line-height: 32
+    );
+  }
+
+  p {
+    font-family: tokens.$font-family-default;
+    @include text-box.trim-px(
+      $height: 1440,
+      $ascent: 2132,
+      $descent: -600,
+      $upm: 2000,
+      $font-size: 48,
+      $line-height: 64
+    );
+  }
+}

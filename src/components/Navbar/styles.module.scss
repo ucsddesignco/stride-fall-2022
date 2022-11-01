@@ -1,0 +1,110 @@
+@use "../../styles/tokens/tokens";
+
+.logo {
+  width: 233px;
+  @media screen and (max-width: 960px) {
+    width: 128px;
+  }
+}
+
+.navbarWrapper {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.mobileMenu {
+  pointer-events: all;
+  background-color: tokens.$color-base-white;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: tokens.$size-space-s;
+  margin: 0;
+  li {
+    a {
+      font-size: tokens.$size-font-m * 1px;
+    }
+    img {
+      width: tokens.$size-space-m;
+    }
+  }
+  li:not(:first-child) {
+    margin-top: -1px;
+  }
+}
+
+.menu {
+  display: none !important;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  background: none;
+  border: unset;
+  padding: 0;
+  margin: 0;
+  &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    transform: translate(-8px, -8px);
+  }
+  @media screen and (max-width: 960px) {
+    display: block !important;
+  }
+}
+
+.navbar {
+  pointer-events: all;
+  background-color: tokens.$color-base-white;
+  height: tokens.$size-length-m;
+  box-sizing: border-box;
+  display: flex;
+  gap: tokens.$size-space-s;
+  align-items: center;
+  padding: tokens.$size-space-s;
+  border-bottom: 1px solid tokens.$color-base-black;
+
+  width: 100%;
+  ul {
+    display: flex;
+
+    li:not(:first-child) {
+      margin-left: -1px;
+    }
+  }
+
+  .divider {
+    height: 1px;
+    width: 100%;
+    background-color: tokens.$color-base-black;
+    flex-grow: 1;
+  }
+  @media screen and (max-width: 960px) {
+    height: tokens.$size-length-s;
+    ul {
+      display: none;
+    }
+  }
+}
+
+.navbarLink {
+  height: tokens.$size-length-s;
+  padding: 0 tokens.$size-space-s;
+  border-radius: tokens.$size-space-s;
+  border: 1px solid tokens.$color-base-black;
+  display: flex;
+  gap: tokens.$size-space-s;
+  align-items: center;
+  font-family: tokens.$font-family-display;
+  font-size: tokens.$size-font-l * 1px;
+  white-space: nowrap;
+  background-color: tokens.$color-base-white;
+  img {
+    display: inline-block;
+  }
+}

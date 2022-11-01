@@ -1,0 +1,51 @@
+@use "../../styles/tokens/tokens";
+@use "@gambowoa/text-box-trim/dist/core" as text-box;
+
+.cta {
+  background-image: url("../../images/checkers.svg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  h2 {
+    @include text-box.trim-px(
+      $height: 700,
+      $ascent: 1000,
+      $descent: -200,
+      $upm: 1000,
+      $font-size: tokens.$size-font-x2l,
+      $line-height: tokens.$size-font-x2l,
+      $grid-size: 1
+    );
+  }
+
+  @media screen and (max-width: 960px) {
+    h2 {
+      @include text-box.trim-px(
+        $height: 700,
+        $ascent: 1000,
+        $descent: -200,
+        $upm: 1000,
+        $font-size: tokens.$size-font-xl,
+        $line-height: tokens.$size-font-xl,
+        $grid-size: 1
+      );
+    }
+  }
+}
+
+.ctaButtonWrapper {
+  display: block;
+  padding-top: tokens.$size-space-xl;
+  @media screen and (max-width: 960px) {
+    padding-top: tokens.$size-space-l;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

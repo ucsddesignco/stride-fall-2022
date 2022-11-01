@@ -1,0 +1,149 @@
+@use "../../styles/tokens/tokens";
+@use "@gambowoa/text-box-trim/dist/core" as text-box;
+@use "../../styles/common.module.scss";
+@use "sass:math";
+
+.companiesHero {
+  height: 100%;
+  min-height: tokens.$size-length-l;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid tokens.$color-base-black;
+  background-image: url("../../images/swirl2.svg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+
+  h1 {
+    @include text-box.trim-px(
+      $height: 700,
+      $ascent: 1000,
+      $descent: -200,
+      $upm: 1000,
+      $font-size: tokens.$size-font-x2l,
+      $line-height: tokens.$size-font-x2l,
+      $grid-size: 1
+    );
+    pointer-events: none;
+    user-select: none;
+    z-index: 2;
+  }
+
+  @media screen and (max-width: 960px) {
+    min-height: tokens.$size-length-m * 2;
+
+    h1 {
+      @include text-box.trim-px(
+        $height: 700,
+        $ascent: 1000,
+        $descent: -200,
+        $upm: 1000,
+        $font-size: tokens.$size-font-xl,
+        $line-height: tokens.$size-font-xl,
+        $grid-size: 1
+      );
+    }
+  }
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: tokens.$size-space-s;
+  margin-top: tokens.$size-space-l;
+}
+
+.hero {
+  height: 100%;
+  min-height: tokens.$size-length-xl;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid tokens.$color-base-black;
+  background-image: url("../../images/checkers.svg");
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (max-width: 960px) {
+    min-height: calc(tokens.$size-length-l + 2 * tokens.$size-space-xl);
+  }
+}
+
+.heroContent {
+  pointer-events: none;
+  user-select: none;
+  z-index: 2;
+
+  p {
+    @include text-box.trim-px(
+      $height: 700,
+      $ascent: 1000,
+      $descent: -200,
+      $upm: 1000,
+      $font-size: tokens.$size-font-l,
+      $line-height: tokens.$size-font-l,
+      $grid-size: 1
+    );
+  }
+
+  span {
+    position: absolute !important;
+    opacity: 0;
+  }
+
+  @media screen and (max-width: 960px) {
+    h1 img {
+      width: 80vw;
+    }
+
+    p {
+      display: none;
+      line-height: 100%;
+      &::before {
+        content: "";
+        margin-top: 0;
+      }
+      &::after {
+        content: "";
+        margin-bottom: 0;
+      }
+    }
+
+    .subtitle {
+      margin-top: tokens.$size-space-m;
+      img {
+        width: clamp(tokens.$size-length-m * 2, 25vw, tokens.$size-length-xl);
+      }
+    }
+  }
+}
+
+.stickerBackground {
+  cursor: pointer;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.sticker {
+  position: absolute;
+}
+
+.stickerImage {
+  position: absolute;
+  width: 6vw;
+  height: 4vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transform: translateX(-50%) translateY(-50%) scale(2);
+}

@@ -1,0 +1,44 @@
+@use "./_reset.scss";
+@use "./tokens/_tokens.scss";
+@use "@gambowoa/text-box-trim/dist/core" as text-box;
+
+@font-face {
+  font-family: Manrope;
+  src: url("../fonts/Manrope-Regular.woff");
+}
+
+@font-face {
+  font-family: Sligoil;
+  src: url("../fonts/Sligoil-Micro.woff");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: tokens.$color-base-white;
+  color: tokens.$color-base-black;
+  font-family: tokens.$font-family-default;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: tokens.$font-family-display;
+  display: inline-block;
+}
+
+img {
+  user-select: none;
+  pointer-events: none;
+}
+
+a {
+  color: tokens.$color-base-black;
+  text-decoration: none;
+}

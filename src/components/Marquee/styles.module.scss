@@ -1,0 +1,35 @@
+@use "../../styles/tokens/tokens";
+
+.marquee {
+  border-bottom: 1px solid tokens.$color-base-black;
+  height: tokens.$size-length-s;
+  background-color: tokens.$color-base-yellow;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 1024px) {
+    height: tokens.$size-length-xs;
+  }
+}
+
+.marqueeContent {
+  font-family: tokens.$font-family-display;
+  white-space: nowrap;
+  font-size: tokens.$size-font-m * 1px;
+  animation: 60s infinite marquee;
+  animation-timing-function: linear;
+  @keyframes marquee {
+    from {
+      transform: translateX(0%);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: tokens.$size-font-s * 1px;
+  }
+}

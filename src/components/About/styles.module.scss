@@ -1,0 +1,39 @@
+@use "../../styles/tokens/tokens";
+
+.about {
+  background-image: url("../../images/swirl1.svg");
+  background-size: cover;
+  background-position: center;
+  // background-attachment: fixed;
+
+  * > .gridWrapper:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.gridWrapper {
+  margin-top: tokens.$size-space-xl;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: tokens.$size-space-x2l;
+  margin-bottom: tokens.$size-space-x2l;
+  row-gap: tokens.$size-space-xl;
+
+  @media screen and (max-width: 960px) {
+    margin-top: tokens.$size-space-l;
+    margin-bottom: tokens.$size-space-xl;
+    row-gap: tokens.$size-space-l;
+  }
+}
+
+.timeAndDate {
+  grid-column: 1/4;
+  @media screen and (max-width: 960px) {
+  }
+}
+
+.overviewText {
+  grid-column: 1/4;
+  @media screen and (max-width: 960px) {
+  }
+}
