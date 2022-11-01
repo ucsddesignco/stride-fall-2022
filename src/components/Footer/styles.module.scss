@@ -1,0 +1,7 @@
+@use "@gambowoa/text-box-trim/dist/core" as text-box;
+@use "../../styles/tokens/tokens";
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}

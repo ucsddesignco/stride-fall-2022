@@ -6,7 +6,6 @@ import menu from "../../images/menu.svg";
 
 import { NavbarLink } from "./NavbarLink";
 import { RemoveScroll } from "react-remove-scroll";
-import FocusTrap from "focus-trap-react";
 import { AnimatePresence } from "framer-motion";
 const MobileMenu = lazy(() => import("./MobileMenu"));
 const paths = [

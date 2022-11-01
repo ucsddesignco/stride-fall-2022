@@ -22,11 +22,16 @@ const StickerBackground = () => {
       onMouseDown={stickerBackground.handleMouseDown}
       onMouseLeave={stickerBackground.handleMouseLeave}
     >
+      {/* <Sticker
+        x={0.5}
+        y={0.5}
+        isVisible={sticker.isVisible}
+        imageURL={stickerImages.images[sticker.number]}
+      /> */}
       {stickerBackground.stickers.map((sticker, index) => (
         <Sticker
           x={sticker.x}
           y={sticker.y}
-          index={index}
           isVisible={sticker.isVisible}
           imageURL={stickerImages.images[sticker.number]}
         />

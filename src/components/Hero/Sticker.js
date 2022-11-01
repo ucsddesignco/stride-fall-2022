@@ -7,7 +7,7 @@ const loadMotion = () => {
   return import("../../utils/motion.js").then((res) => res.default);
 };
 
-export const Sticker = ({ x, y, isVisible, index, imageURL }) => {
+export const Sticker = ({ x, y, isVisible, imageURL }) => {
   const [rotation] = useState(random(-15, 15));
   return (
     <LazyMotion features={loadMotion}>

@@ -19,7 +19,7 @@ export const CompanyThumbnail = ({ company }) => {
         className={styles.sponsor}
       >
         <div className={styles.sponsorImage}>
-          <img src={company.imageURL} />
+          <img src={company.imageURL} alt={company.name} />
         </div>
       </button>
     </li>

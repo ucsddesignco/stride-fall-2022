@@ -15,7 +15,7 @@ export const TopCompanies = () => {
         <div className={styles.desktopTitle}>
           <h2>Top Companies</h2>
           <div className={styles.divider} />
-          <Link>
+          <Link to="/companies">
             View all attending companies
             <img src={arrow} alt="" width={24} height={24} />
           </Link>
