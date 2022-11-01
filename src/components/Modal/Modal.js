@@ -35,6 +35,8 @@ const Modal = () => {
     });
   };
 
+  console.log(modal, "modal");
+
   return (
     <LazyMotion features={loadMotion}>
       <AnimatePresence>
@@ -58,7 +60,7 @@ const Modal = () => {
                     className={styles.modal}
                     variants={modalAnimation}
                   >
-                    <ModalContent />
+                    <ModalContent company={modal.companyData} />
                   </m.div>
                 </div>
               </m.div>

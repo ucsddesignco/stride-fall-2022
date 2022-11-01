@@ -7,7 +7,7 @@ import close from "../../images/close.svg";
 import clsx from "clsx";
 import { useModal } from "./useModal";
 useModal;
-export const ModalContent = ({}) => {
+export const ModalContent = ({ company }) => {
   const { dispatch } = useModal();
 
   const handleClick = () => {
@@ -15,10 +15,11 @@ export const ModalContent = ({}) => {
       type: "hide",
     });
   };
+
   return (
     <>
       <div className={styles.titlebar}>
-        <h3>Company Name</h3>
+        <h3>{company.name}</h3>
         <button onClick={handleClick} aria-label="Close ">
           <img src={close} width="100%" />
         </button>
@@ -30,7 +31,7 @@ export const ModalContent = ({}) => {
             <div className={common.divider} />
           </div>
           <div className={styles.paragraphWrapper}>
-            <p>About Paragraph</p>
+            <p>{company.about}</p>
           </div>
         </div>
         <div className={styles.details}>
@@ -41,17 +42,24 @@ export const ModalContent = ({}) => {
           <div
             className={clsx(styles.paragraphWrapper, styles.infoPillWrapper)}
           >
-            <span className={styles.infoPill}>One-to-One</span>
-            <span className={styles.infoPill}>Info Session</span>
-            <span className={styles.infoPill}>Recruitment at Stride</span>
+            {company.hasOneToOne && (
+              <span className={styles.infoPill}>One-to-One</span>
+            )}
+            {company.hasInfoSession && (
+              <span className={styles.infoPill}>Info Session</span>
+            )}
+            {company.isRecruiting && (
+              <span className={styles.infoPill}>Recruitment at Stride</span>
+            )}
           </div>
           <div className={styles.subtitle}>
             <h4>Links</h4>
             <div className={common.divider} />
           </div>
           <div className={clsx(styles.paragraphWrapper, styles.linkWrapper)}>
-            <a href="/">Link</a>
-            <a href="/">Link</a>
+            {company.links.map((link) => (
+              <a href={link.url}>{link.text}</a>
+            ))}
           </div>
           <div className={styles.subtitle}>
             <h4>Roles</h4>
@@ -59,12 +67,11 @@ export const ModalContent = ({}) => {
           </div>
           <div className={styles.paragraphWrapper}>
             <ul>
-              <li>
-                <p>UI Design/Research (Full Time)</p>
-              </li>
-              <li>
-                <p>UX/UI (Internship)</p>
-              </li>
+              {company.roles.map((role) => (
+                <li>
+                  <p>{role}</p>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

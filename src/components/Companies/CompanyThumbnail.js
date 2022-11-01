@@ -11,7 +11,7 @@ export const CompanyThumbnail = ({ company }) => {
         onClick={() => {
           dispatch({
             type: "setCompany",
-            name: company,
+            companyData: company,
           });
           dispatch({
             type: "show",

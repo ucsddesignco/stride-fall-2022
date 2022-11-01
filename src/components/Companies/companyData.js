@@ -6,7 +6,7 @@ export const CompanyData = [
     hasInfoSession: true,
     isRecruiting: true,
     links: [{ text: "link text", url: "" }],
-    openRoles: ["role a", "role b"],
+    roles: ["role a", "role b"],
   },
   {
     name: "Sony B",
@@ -15,7 +15,7 @@ export const CompanyData = [
     hasInfoSession: true,
     isRecruiting: true,
     links: [{ text: "link text", url: "" }],
-    openRoles: ["role a", "role b"],
+    roles: ["role a", "role b"],
   },
   {
     name: "Sony C",
@@ -24,6 +24,6 @@ export const CompanyData = [
     hasInfoSession: true,
     isRecruiting: true,
     links: [{ text: "link text", url: "" }],
-    openRoles: ["role a", "role b"],
+    roles: ["role a", "role b"],
   },
 ];

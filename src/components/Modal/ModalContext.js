@@ -36,7 +36,7 @@ function modalReducer(draft, action) {
       break;
     }
     case "setCompany": {
-      draft.name = action.name;
+      draft.companyData = action.companyData;
       break;
     }
     default: {
@@ -45,4 +45,4 @@ function modalReducer(draft, action) {
   }
 }
 
-const initialState = { isOpen: false, name: null };
+const initialState = { isOpen: false, companyData: null };
