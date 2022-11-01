@@ -25,7 +25,7 @@ export const TopCompanies = () => {
             <h2>Top Sponsors</h2>
             <div className={common.divider} />
           </div>
-          <Link>
+          <Link to="/companies">
             <p>View all companies</p>
             <img src={arrow} alt="" width={24} height={24} />
           </Link>

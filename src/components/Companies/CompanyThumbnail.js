@@ -1,7 +1,6 @@
 import React from "react";
 import { useModal } from "../Modal/useModal";
 import styles from "./styles.module.scss";
-
 export const CompanyThumbnail = ({ company }) => {
   const { dispatch } = useModal();
   return (
@@ -19,7 +18,9 @@ export const CompanyThumbnail = ({ company }) => {
         }}
         className={styles.sponsor}
       >
-        {company.name}
+        <div className={styles.sponsorImage}>
+          <img src={company.imageURL} />
+        </div>
       </button>
     </li>
   );
