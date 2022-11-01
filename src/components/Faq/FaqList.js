@@ -8,17 +8,17 @@ const FaqList = () => {
     {
       title: "When is Stride?",
       content:
-        "Stride takes place on Saturday, February 5th, 2022. It will be from 9am-2pm with a break from 11am-12pm. This year, Stride will be a completely virtual event held over Zoom",
+        "Stride takes place on Tuesday, November 8th, 2022. It will be from 10am-3pm with a break from 12pm-1pm. This year, Stride will be a virtual event held over Zoom.",
     },
     {
       title: "What will Stride look like on Zoom?",
       content:
-        "Students will be sorted into breakout rooms with a recruiter. For the most up-to-date information, check our social media @ucsddesignco.",
+        "Stride will offer both company info sessions as well as one-to-one opportunities! You’ll have the opportunity to register for a 10-minute one-to-one chat with a company representative or a 20-minute company info session.",
     },
     {
       title: "Who can attend Stride?",
       content:
-        "All UCSD students and alumni are welcome! There is a limited number of recruiters and time with each one (~15 min), so students will be assigned to breakout rooms on a first come first serve basis. Be sure to sign up and secure your spot through our registration form by Tuesday, 2/1.",
+        "All UCSD students and alumni are welcome! Participants will be able to register beforehand for a one-to-one session or a company info session. One-to-one sessions are on a first come first serve basis because there are a limited number of company representatives. The company info sessions are uncapped. Be sure to RSVP so you can get early access!",
     },
     {
       title: "How should I dress for Stride?",

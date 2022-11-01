@@ -34,18 +34,21 @@ export const About = () => {
           <div className={styles.overviewText}>
             <p>
               Register for 10-minute one-to-one chats with company
-              representatives. This is a great opportunity for having meaningful
-              conversations, receiving resume and portfolio feedback, and
-              sharing your design experience.
+              representatives in breakout rooms. This is a great opportunity for
+              having meaningful conversations, receiving resume and portfolio
+              feedback, and sharing your design experience. There is a mix of
+              companies who are recruiting and companies who will be providing
+              resume and portfolio feedback during the one-to-ones, so we’ll let
+              you know which type you’re signing up for!
             </p>
           </div>
           <h3 className={clsx(common.subtitle, styles.timeAndDate)}>
             Company Info Sessions
           </h3>
           <p className={styles.overviewText}>
-            Register for 20-minute company information sessions. This is a
-            valuable opportunity to find roles being recruited for and learn how
-            to apply for them.
+            Register for 20-minute company information sessions in breakout
+            rooms. This is a valuable opportunity to learn more about a
+            company’s mission and culture, relevant design roles, and more!
           </p>
         </div>
       </div>
