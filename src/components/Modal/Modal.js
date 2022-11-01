@@ -7,6 +7,7 @@ import FocusTrap from "focus-trap-react";
 import common from "../../styles/common.module.scss";
 import close from "../../images/close.svg";
 import clsx from "clsx";
+import { ModalContent } from "./ModalContent";
 
 const loadMotion = () => {
   return import("../../utils/motion.js").then((res) => res.default);
@@ -33,6 +34,7 @@ const Modal = () => {
       type: "hide",
     });
   };
+
   return (
     <LazyMotion features={loadMotion}>
       <AnimatePresence>
@@ -56,68 +58,7 @@ const Modal = () => {
                     className={styles.modal}
                     variants={modalAnimation}
                   >
-                    <div className={styles.titlebar}>
-                      <h3 focu>{modal.name}</h3>
-                      <button onClick={handleClick} aria-label="Close ">
-                        <img src={close} width="100%" />
-                      </button>
-                    </div>
-                    <div className={styles.content}>
-                      <div>
-                        <div className={styles.subtitle}>
-                          <h4>About {modal.name}</h4>
-                          <div className={common.divider} />
-                        </div>
-                        <div className={styles.paragraphWrapper}>
-                          <p>
-                            Sony’s purpose is simple. We aim to fill the world
-                            with emotion, through the power of creativity and
-                            technology. We want to be responsible for getting
-                            hearts racing, stirring ambition, and putting a
-                            smile on the faces of our customers. That challenge,
-                            combined with our spirit of innovation, motivates us
-                            to create groundbreaking technology, entertainment,
-                            and services for people worldwide.
-                          </p>
-                        </div>
-                      </div>
-                      <div className={styles.details}>
-                        <div className={styles.subtitle}>
-                          <h4>Available For</h4>
-                          <div className={common.divider} />
-                        </div>
-                        <div
-                          className={clsx(
-                            styles.paragraphWrapper,
-                            styles.infoPillWrapper
-                          )}
-                        >
-                          <span className={styles.infoPill}>One-to-One</span>
-                          <span className={styles.infoPill}>Info Session</span>
-                        </div>
-                        <div className={styles.subtitle}>
-                          <h4>Links</h4>
-                          <div className={common.divider} />
-                        </div>
-                        <div className={styles.paragraphWrapper}>
-                          <a href="/">Sony</a>
-                        </div>
-                        <div className={styles.subtitle}>
-                          <h4>Open Roles</h4>
-                          <div className={common.divider} />
-                        </div>
-                        <div className={styles.paragraphWrapper}>
-                          <ul>
-                            <li>
-                              <a href="/">UI Design/Research (Full Time)</a>
-                            </li>
-                            <li>
-                              <a href="/">UX/UI (Internship)</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+                    <ModalContent />
                   </m.div>
                 </div>
               </m.div>
