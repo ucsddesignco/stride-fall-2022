@@ -1,5 +1,5 @@
-@use "../../styles/tokens/tokens";
 @use "@gambowoa/text-box-trim/dist/core" as text-box;
+@use "../../styles/tokens/tokens";
 
 .faqList {
   ul > li:not(:first-child) {
@@ -19,6 +19,7 @@
   p {
     padding-right: tokens.$size-space-xl;
   }
+
   @media screen and (max-width: 960px) {
     p {
       padding-right: tokens.$size-space-l;
@@ -31,6 +32,7 @@
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+
   @media screen and (max-width: 960px) {
     width: tokens.$size-space-m;
   }
@@ -58,6 +60,7 @@
     margin-top: tokens.$size-space-l;
     font-family: tokens.$font-family-default;
     display: inline-block;
+
     @media screen and (max-width: 960px) {
       margin-top: tokens.$size-space-m;
     }

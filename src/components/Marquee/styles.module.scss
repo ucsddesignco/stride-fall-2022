@@ -19,6 +19,7 @@
   font-size: tokens.$size-font-m * 1px;
   animation: 60s infinite marquee;
   animation-timing-function: linear;
+
   @keyframes marquee {
     from {
       transform: translateX(0%);

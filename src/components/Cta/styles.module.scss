@@ -1,5 +1,6 @@
-@use "../../styles/tokens/tokens";
 @use "@gambowoa/text-box-trim/dist/core" as text-box;
+
+@use "../../styles/tokens/tokens";
 
 .cta {
   background-image: url("../../images/checkers.svg");
@@ -39,6 +40,7 @@
 .ctaButtonWrapper {
   display: block;
   padding-top: tokens.$size-space-xl;
+
   @media screen and (max-width: 960px) {
     padding-top: tokens.$size-space-l;
   }

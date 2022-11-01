@@ -1,5 +1,5 @@
-@use "../../styles/tokens/tokens";
 @use "@gambowoa/text-box-trim/dist/core" as text-box;
+@use "../../styles/tokens/tokens";
 
 .wrapper {
   margin-top: tokens.$size-space-xl;

@@ -1,7 +1,7 @@
-@use "../../styles/tokens/tokens";
 @use "@gambowoa/text-box-trim/dist/core" as text-box;
+
+@use "../../styles/tokens/tokens";
 @use "../../styles/common.module.scss";
-@use "sass:math";
 
 .companiesHero {
   height: 100%;
@@ -129,6 +129,7 @@
   height: 100%;
   position: absolute;
   width: 100%;
+
   @media screen and (max-width: 1024px) {
     display: none;
   }
