@@ -141,8 +141,8 @@
 
 .stickerImage {
   position: absolute;
-  width: 6vw;
-  height: 4vw;
+  width: clamp(60px, 8vw, 999px);
+  height: clamp(40px, 6vw, 999px);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
