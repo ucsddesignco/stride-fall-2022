@@ -66,9 +66,7 @@
   position: relative;
   overflow: hidden;
   border-bottom: 1px solid tokens.$color-base-black;
-  background-image: url("../../images/checkers.svg");
-  background-size: cover;
-  background-position: center;
+  background-color: tokens.$color-base-black;
 
   @media screen and (max-width: 960px) {
     min-height: calc(tokens.$size-length-l + 2 * tokens.$size-space-xl);
@@ -81,6 +79,7 @@
   z-index: 2;
 
   p {
+    color: tokens.$color-base-white;
     @include text-box.trim-px(
       $height: 700,
       $ascent: 1000,
