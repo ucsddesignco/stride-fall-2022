@@ -25,7 +25,7 @@ const StickerBackground = () => {
     >
       <Sticker
         x={0.9}
-        y={0.6}
+        y={0.7}
         isVisible={true}
         imageURL={stickerImages.images[1]}
       />
