@@ -15,7 +15,7 @@ export const Cta = () => {
             color={tokens.color.base.yellow}
             hasIcon={true}
           >
-            Register Now
+            RSVP Now
           </NavbarLink>
         </div>
       </div>

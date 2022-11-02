@@ -17,7 +17,7 @@ const paths = [
     hasIcon: true,
   },
   {
-    title: "Register",
+    title: "RSVP",
     path: "/",
     color: tokens.color.base.yellow,
     hasIcon: true,
