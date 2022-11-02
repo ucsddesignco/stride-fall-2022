@@ -73,6 +73,7 @@ export const Navbar = () => {
                         color={path.color}
                         hasIcon={path.hasIcon}
                         onClick={() => setIsMobileMenuVisible(false)}
+                        hasNewTab={path.hasNewTab}
                       >
                         {path.title}
                       </NavbarLink>

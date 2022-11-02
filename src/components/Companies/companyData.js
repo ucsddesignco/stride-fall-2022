@@ -38,7 +38,7 @@ export const CompanyData = [
     roles: ["Not Recruiting"],
   },
   {
-    name: "Deloitte Consulting LLP",
+    name: "Deloitte",
     imageURL: deloitte,
 
     about:
