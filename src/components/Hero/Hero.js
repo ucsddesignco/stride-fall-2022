@@ -12,6 +12,11 @@ export const Hero = () => {
         <StickerBackground />
       </Suspense>
       <div className={styles.heroContent}>
+        <div className={styles.date}>
+          <p>Fall</p>
+          <div className={common.divider} />
+          <p>2022</p>
+        </div>
         <h1>
           <span>Stride</span>
           <img

@@ -24,20 +24,20 @@ const StickerBackground = () => {
       onMouseLeave={stickerBackground.handleMouseLeave}
     >
       <Sticker
-        x={0.9}
-        y={0.6}
+        x={0.95}
+        y={0.7}
         isVisible={true}
         imageURL={stickerImages.images[1]}
       />
       <Sticker
-        x={0.1}
-        y={0.2}
+        x={0.05}
+        y={0.1}
         isVisible={true}
         imageURL={stickerImages.images[5]}
       />
       <Sticker
         x={0.8}
-        y={0.1}
+        y={0.15}
         isVisible={true}
         imageURL={stickerImages.images[7]}
       />
@@ -46,6 +46,12 @@ const StickerBackground = () => {
         y={0.8}
         isVisible={true}
         imageURL={stickerImages.images[2]}
+      />
+      <Sticker
+        x={0.6}
+        y={0.95}
+        isVisible={true}
+        imageURL={stickerImages.images[12]}
       />
       {stickerBackground.stickers.map((sticker, index) => (
         <Sticker

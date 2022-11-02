@@ -3,9 +3,11 @@
 @use "../../styles/tokens/tokens";
 
 .cta {
-  background-image: url("../../images/checkers.svg");
-  background-size: cover;
-  background-position: center;
+  background-color: tokens.$color-base-black;
+  color: tokens.$color-base-white;
+  // background-image: url("../../images/checkers.svg");
+  // background-size: cover;
+  // background-position: center;
   display: flex;
   justify-content: center;
   text-align: center;
