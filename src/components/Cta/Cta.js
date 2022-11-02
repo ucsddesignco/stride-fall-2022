@@ -11,9 +11,10 @@ export const Cta = () => {
         <h2>Ready for Stride?</h2>
         <div className={styles.ctaButtonWrapper}>
           <NavbarLink
-            path={"/"}
+            path={"http://bit.ly/stride-rsvp"}
             color={tokens.color.base.yellow}
             hasIcon={true}
+            hasNewTab={true}
           >
             RSVP Now
           </NavbarLink>

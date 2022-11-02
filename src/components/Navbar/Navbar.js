@@ -9,18 +9,26 @@ import { RemoveScroll } from "react-remove-scroll";
 import { AnimatePresence } from "framer-motion";
 const MobileMenu = lazy(() => import("./MobileMenu"));
 const paths = [
-  { title: "Home", path: "/", color: "none", hasIcon: false },
-  { title: "Companies", path: "/companies", color: "none", hasIcon: false },
+  { title: "Home", path: "/", color: "none", hasIcon: false, hasNewTab: false },
+  {
+    title: "Companies",
+    path: "/companies",
+    color: "none",
+    hasIcon: false,
+    hasNewTab: false,
+  },
   {
     title: "How to Prepare",
     path: "/",
     hasIcon: true,
+    hasNewTab: true,
   },
   {
     title: "RSVP",
-    path: "/",
+    path: "http://bit.ly/stride-rsvp",
     color: tokens.color.base.yellow,
     hasIcon: true,
+    hasNewTab: true,
   },
 ];
 
@@ -38,6 +46,7 @@ export const Navbar = () => {
                 path={path.path}
                 color={path.color}
                 hasIcon={path.hasIcon}
+                hasNewTab={path.hasNewTab}
               >
                 {path.title}
               </NavbarLink>
