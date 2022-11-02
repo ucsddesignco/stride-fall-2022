@@ -19,7 +19,7 @@ const paths = [
   },
   {
     title: "How to Prepare",
-    path: "/",
+    path: "https://docs.google.com/presentation/d/159kEktP6bRSRWa0fG8Jxyl-CeiORcMJOUuwuvou8oZY/edit?usp=sharing",
     hasIcon: true,
     hasNewTab: true,
   },
