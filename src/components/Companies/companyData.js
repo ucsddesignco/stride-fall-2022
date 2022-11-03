@@ -59,10 +59,6 @@ export const CompanyData = [
         text: "Deloitte Consulting Applied AI Analyst",
         url: "https://apply.deloitte.com/careers/JobDetail/Deloitte-Consulting-Applied-AI-Analyst/116693",
       },
-      {
-        text: "Doblin Consultant",
-        url: "https://apply.deloitte.com/careers/JobDetail/Doblin-Consultant/109377",
-      },
     ],
     roles: [
       "User Experience (UX) Designer",
