@@ -22,7 +22,7 @@ export const TopCompanies = () => {
         </div>
         <div className={styles.mobileTitle}>
           <div className={common.title}>
-            <h2>Top Sponsors</h2>
+            <h2>Top Companies</h2>
             <div className={common.divider} />
           </div>
           <Link to="/companies">
