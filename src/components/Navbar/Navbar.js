@@ -7,6 +7,7 @@ import menu from "../../images/menu.svg";
 import { NavbarLink } from "./NavbarLink";
 import { RemoveScroll } from "react-remove-scroll";
 import { AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 const MobileMenu = lazy(() => import("./MobileMenu"));
 const paths = [
   { title: "Home", path: "/", color: "none", hasIcon: false, hasNewTab: false },
@@ -37,7 +38,9 @@ export const Navbar = () => {
   return (
     <nav className={styles.navbarWrapper}>
       <div className={styles.navbar}>
-        <img className={styles.logo} src={stride} alt="Stride" width="100%" />
+        <Link to="/">
+          <img className={styles.logo} src={stride} alt="Stride" width="100%" />
+        </Link>
         <div className={styles.divider}></div>
         <ul>
           {paths.map((path) => (
