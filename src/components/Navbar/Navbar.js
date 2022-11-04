@@ -3,11 +3,11 @@ import tokens from "../../styles/tokens/tokens.json";
 import styles from "./styles.module.scss";
 import stride from "../../images/stride.svg";
 import menu from "../../images/menu.svg";
-
 import { NavbarLink } from "./NavbarLink";
 import { RemoveScroll } from "react-remove-scroll";
 import { AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
+import { createBrowserHistory } from "@remix-run/router";
 const MobileMenu = lazy(() => import("./MobileMenu"));
 const paths = [
   { title: "Home", path: "/", color: "none", hasIcon: false, hasNewTab: false },
