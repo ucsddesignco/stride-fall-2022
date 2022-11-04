@@ -1,6 +1,8 @@
 import deloitte from "../../images/deloitte.png";
 import sony from "../../images/sony.png";
 import accenture from "../../images/accenture.png";
+import yahoo from "../../images/yahoo.png";
+import pixar from "../../images/pixar.png";
 
 export const CompanyData = [
   {
@@ -21,18 +23,16 @@ export const CompanyData = [
     ],
   },
   {
-    name: "Accenture Song",
-    imageURL: accenture,
-
-    about:
-      "We are a bold and generous group of creatives, designers, consultants, technologists, strategists and engineers working together to serve the modern customer and their ever-evolving needs. ",
+    name: "Pixar",
+    imageURL: pixar,
+    about: "We make animated movies!",
     hasOneToOne: true,
     hasInfoSession: true,
     isRecruiting: false,
     links: [
       {
-        text: "accenture.com/us-en/careers",
-        url: "https://www.accenture.com/us-en/careers",
+        text: "pixar.com",
+        url: "https://www.pixar.com/",
       },
     ],
     roles: ["Not Recruiting"],
@@ -68,5 +68,42 @@ export const CompanyData = [
       "Product Designer",
       "Web Developer",
     ],
+  },
+  {
+    name: "Yahoo",
+    imageURL: yahoo,
+    about:
+      "We Are Yahoo. Our media, technology and business platforms connect hundreds of millions of people around the world to the things they love. With apps and sites like Yahoo Sports, Yahoo Finance, Yahoo Fantasy, Yahoo Mail and more and a powerful, open platform that connects brands and publishers to passionate fans, we’re all about putting an exclamation point on what you’re into.",
+    hasOneToOne: true,
+    hasInfoSession: true,
+    isRecruiting: true,
+    links: [
+      {
+        text: "Yahoo Design Associate Program",
+        url: "https://www.yahoodap.com/",
+      },
+      {
+        text: "yahooinc.com/careers",
+        url: "https://www.yahooinc.com/careers/",
+      },
+    ],
+    roles: ["Product Designer"],
+  },
+  {
+    name: "Accenture Song",
+    imageURL: accenture,
+
+    about:
+      "We are a bold and generous group of creatives, designers, consultants, technologists, strategists and engineers working together to serve the modern customer and their ever-evolving needs. ",
+    hasOneToOne: true,
+    hasInfoSession: true,
+    isRecruiting: false,
+    links: [
+      {
+        text: "accenture.com/us-en/careers",
+        url: "https://www.accenture.com/us-en/careers",
+      },
+    ],
+    roles: ["Not Recruiting"],
   },
 ];

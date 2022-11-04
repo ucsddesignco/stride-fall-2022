@@ -7,7 +7,7 @@ import arrow from "../../images/arrow.svg";
 import { CompanyData } from "./companyData";
 
 export const TopCompanies = () => {
-  const companies = CompanyData;
+  const companies = CompanyData.slice(0, 3);
 
   return (
     <div className={common.section}>
