@@ -58,7 +58,9 @@ export const ModalContent = ({ company }) => {
           </div>
           <div className={clsx(styles.paragraphWrapper, styles.linkWrapper)}>
             {company.links.map((link) => (
-              <a href={link.url}>{link.text}</a>
+              <a target="_blank" rel="noopener noreferrer" href={link.url}>
+                {link.text}
+              </a>
             ))}
           </div>
           <div className={styles.subtitle}>
