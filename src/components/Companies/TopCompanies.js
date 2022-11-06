@@ -13,7 +13,7 @@ export const TopCompanies = () => {
     <div className={common.section}>
       <div className={common.content}>
         <div className={styles.desktopTitle}>
-          <h2>Top Companies</h2>
+          <h2>Attending Companies</h2>
           <div className={styles.divider} />
           <Link to="/companies">
             View all attending companies
@@ -22,7 +22,7 @@ export const TopCompanies = () => {
         </div>
         <div className={styles.mobileTitle}>
           <div className={common.title}>
-            <h2>Top Companies</h2>
+            <h2>Attending Companies</h2>
             <div className={common.divider} />
           </div>
           <Link to="/companies">
