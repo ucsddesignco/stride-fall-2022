@@ -25,8 +25,8 @@ const paths = [
     hasNewTab: true,
   },
   {
-    title: "RSVP",
-    path: "http://bit.ly/stride-rsvp",
+    title: "Register",
+    path: "https://bit.ly/stride22-registration",
     color: tokens.color.base.yellow,
     hasIcon: true,
     hasNewTab: true,
